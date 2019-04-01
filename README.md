@@ -34,6 +34,7 @@
         cpanm B::Flags
         #问题
         cpanm会显示安装成功，但用perldoc -l Opcodes去检测Opcodes模块却检测不到，去/usr/lib64/perl5/目录下可以看到，Opcodes.pm出现在/usr/lib64/perl5/lib/perl5/x86_64-linux-thread-multi/目录下，将其移到/usr/lib64/perl5/下，并修改权限即可检测到。
+        可能模块调用位置与安装位置不一致。
 
     
 
